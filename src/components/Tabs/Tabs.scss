@@ -1,0 +1,60 @@
+.tabs {
+  &__header {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 106px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 44px;
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Використовуємо auto-fill */
+    // gap: 44px; /* Однаковий відступ між картками */
+    // padding: 20px;
+    // justify-content: center;
+  }
+  &__item {
+    max-width: 440px;
+
+    // max-width: 400px; /* Фіксуємо максимальну ширину, щоб уникнути зміни розмірів */
+    // width: 100%; /* Дозволяє карткам адаптуватися */
+    img {
+      display: block;
+      width: 100%;
+    }
+    span {
+      color: #FD6F00;
+      font-size: 19px;
+      display: block;
+      margin: 37px 0 10px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+  }
+  &__button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: #F8F8F8;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    font-size: 24px;
+    border-radius: 12px;
+    border: 1px solid #aaaaaa;
+    &.active {
+      background: #FD6F00;
+      color: #fff;
+    }
+  }
+}
+
+
+
+// .tab-button:hover {
+//   color: #0056b3;
+// }
+
