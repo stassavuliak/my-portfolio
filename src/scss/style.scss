@@ -23,6 +23,7 @@ a, a:hover, a:active {
 
 input, input:focus, button, button:focus {
   outline: none;
+  background: transparent;
 }
 
 div, p, form, input, a, span, button, textarea {
@@ -56,11 +57,13 @@ button {
 :root {
   --bg-color: #fff;
   --text-color: #000;
+  --bg-card: #F8F8F8;
 }
 
 .dark {
   --bg-color: #1E1E1E;
   --text-color: #fff;
+  --bg-card: #3a3a3a;
 }
 
 body {
@@ -113,8 +116,9 @@ p {
     &:hover {
       transform: translateY(-5px);
     }
-    img {
+    svg {
       display: block;
+      color: #FD6F00;
     }
   }
 }
@@ -235,7 +239,7 @@ h2 {
   align-items: flex-start;
   justify-content: flex-end;
   gap: 15px;
-  background: #F8F8F8;
+  background: var(--bg-card);
   border-radius: 14px;
   padding: 50px 20px;
   b {
@@ -265,7 +269,7 @@ h2 {
     display: flex;
     align-items: center;
     gap: 11px;
-    background: #F8F8F8;
+    background: var(--bg-card);
     padding: 55px 75px 55px 50px;
     border-radius: 14px;
   }
@@ -326,7 +330,7 @@ h2 {
 
 .footer {
   &__wrap {
-    background: #F8F8F8;
+    background: var(--bg-card);
     padding: 110px 0 60px;
   }
   &__inner-wrap {
