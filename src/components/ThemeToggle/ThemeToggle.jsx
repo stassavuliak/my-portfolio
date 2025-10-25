@@ -30,15 +30,5 @@ const ThemeToggle = () => {
   );
 };
 
-// const styles = {
-//   button: {
-//     padding: '8px 16px',
-//     borderRadius: '8px',
-//     cursor: 'pointer',
-//     border: 'none',
-//     background: 'none',
-//     fontWeight: 'bold',
-//   },
-// };
 
 export default ThemeToggle;

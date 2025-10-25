@@ -151,16 +151,6 @@ h2 {
 
 // ---------------------------------------------------------------------------//
 
-.header {
-  padding: 60px 0;
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-}
-
 // section hero 
 
 .section-hero {
@@ -328,24 +318,7 @@ h2 {
   }
 }
 
-.footer {
-  &__wrap {
-    background: var(--bg-card);
-    padding: 110px 0 60px;
-  }
-  &__inner-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 65px;
-  }
-  &__copy {
-    background: #545454;
-    color: #FFF;
-    padding: 26px 0;
-    text-align: center;
-  }
-}
+
 
 
 
