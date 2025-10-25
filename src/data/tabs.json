@@ -1,0 +1,7 @@
+[
+  { "id": "all", "label": "All" },
+  { "id": "uiUx", "label": "UI/UX" },
+  { "id": "webDesign", "label": "Web Design" },
+  { "id": "appDesign", "label": "App Design" },
+  { "id": "graphicDesign", "label": "Graphic Design" }
+]

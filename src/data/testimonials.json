@@ -1,0 +1,26 @@
+[
+  {
+    "img": "images/img/test1.png",
+    "text": "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
+    "name": "Alice Johnson",
+    "role": "CEO"
+  },
+  {
+    "img": "images/img/test2.png",
+    "text": "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. ",
+    "name": "Bob Smith",
+    "role": "CTO"
+  },
+  {
+    "img": "images/img/test1.png",
+    "text": "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis ",
+    "name": "Carol White",
+    "role": "Designer"
+  },
+  {
+    "img": "images/img/test2.png",
+    "text": "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. ",
+    "name": "David Lee",
+    "role": "Developer"
+  }
+]
