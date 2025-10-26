@@ -10,6 +10,7 @@ import TestimonialsSlider from './components/TestimonialsSlider/TestimonialsSlid
 import { ThemeProvider } from './contexts/ThemeProvider';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import ContactForm from './components/ContactForm/ContactForm';
 
 
 
@@ -228,10 +229,7 @@ function App() {
           </div>
           {/* heading */}
 
-          <form className="form">
-            <input type="email" placeholder='Enter Your Email'/>
-            <button type="submit" className='btn'>Contact Me</button>
-          </form>
+          <ContactForm/>
         </div>
       </section>
       {/* section form */}
