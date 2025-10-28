@@ -1,4 +1,5 @@
 import './Footer.scss'
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -10,12 +11,12 @@ const Footer = () => {
 
             <nav className="nav">
               <ul>
-                <li><a href="#!">Home</a></li>
-                <li><a href="#!">About Me</a></li>
-                <li><a href="#!">Services</a></li>
-                <li><a href="#!">Projects</a></li>
-                <li><a href="#!">Testimonials</a></li>
-                <li><a href="#!">Contact</a></li>
+                <li><Link to="home" href="#!" smooth={true} duration={500} offset={-180}>Home</Link></li>
+                <li><Link to="about" href="#!" smooth={true} duration={500} offset={-132}>About Me</Link></li>
+                <li><Link to="services" href="#!" smooth={true} duration={500} offset={-132}>Services</Link></li>
+                <li><Link to="projects" href="#!" smooth={true} duration={500} offset={-132}>Projects</Link></li>
+                <li><Link to="testimonials" href="#!" smooth={true} duration={500} offset={-132}>Testimonials</Link></li>
+                <li><Link to="form" href="#!" smooth={true} duration={500} offset={-132}>Contact</Link></li>
               </ul>
             </nav>
 
@@ -89,7 +90,7 @@ const Footer = () => {
 
       <div className="footer__copy">
         <div className="container">
-          <p>&copy; 2025 All Rights Reserved , Inc.</p>
+          <p>&copy; 2024 - {new Date().getFullYear()} All Rights Reserved , Inc.</p>
         </div>
       </div>
     </footer>
