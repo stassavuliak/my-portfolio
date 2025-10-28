@@ -1,0 +1,25 @@
+// section form
+.section-form {
+  // padding-bottom: 140px;
+  padding: 60px 0;
+}
+
+.form {
+  max-width: 875px;
+  width: 100%;
+  margin: 60px auto 0;
+  display: flex;
+  gap: 25px;
+  input {
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #AFAFAF;
+    padding: 22px 26px;
+    background: #F8F8F8;
+  }
+  button {
+    max-width: 222px;
+    width: 100%;
+  }
+}

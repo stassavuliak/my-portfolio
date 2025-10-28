@@ -1,0 +1,21 @@
+.section-about {
+  padding: 60px 0;
+  .heading {
+    text-align: left;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  &__skills {
+    margin-top: 15px;
+  }
+  &__skills-item {
+    span {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}

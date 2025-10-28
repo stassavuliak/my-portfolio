@@ -1,0 +1,36 @@
+.section-hero {
+  padding: 60px 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__info {
+    max-width: 720px;
+    p {
+      margin-bottom: 22px;
+    }
+  }
+  &__head {
+    margin-bottom: 28px;
+  }
+  &__name {
+    font-weight: 600;
+    span {
+      display: block;
+      font-weight: 600;
+      color: #FD6F00;
+      margin-top: 6px;
+    }
+  }
+  &__img {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+  }
+  &__btn {
+    max-width: 188px;
+    width: 100%;
+  }
+}
