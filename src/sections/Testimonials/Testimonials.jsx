@@ -1,4 +1,4 @@
-import TestimonialsSlider from "../TestimonialsSlider/TestimonialsSlider";
+import TestimonialsSlider from "../../components/TestimonialsSlider/TestimonialsSlider";
 import './Testimonials.scss';
 
 

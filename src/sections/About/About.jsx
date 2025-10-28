@@ -1,4 +1,4 @@
-import CustomRangeSlider from "../CustomRangeSlider/CustomRangeSlider";
+import CustomRangeSlider from "../../components/CustomRangeSlider/CustomRangeSlider";
 import './About.scss'
 
 const About = () => {

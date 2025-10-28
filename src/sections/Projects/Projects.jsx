@@ -1,5 +1,5 @@
 import './Projects.scss';
-import Tabs from '../Tabs/Tabs';
+import Tabs from '../../components/Tabs/Tabs';
 
 const Projects = () => {
   return (
