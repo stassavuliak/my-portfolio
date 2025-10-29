@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+  a {
+    display: block;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    svg {
+      display: block;
+      color: #FD6F00;
+    }
+  }
+}
