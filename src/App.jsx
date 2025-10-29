@@ -1,13 +1,7 @@
-import './App.css';
-
-// Import Swiper styles
-// import 'swiper/css';
-
-
 import { ThemeProvider } from './contexts/ThemeProvider';
+import { Element } from "react-scroll";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { Element } from "react-scroll";
 import Hero from './sections/Hero/Hero';
 import About from './sections/About/About';
 import Services from './sections/Services/Services';
@@ -51,7 +45,5 @@ function App() {
     </ThemeProvider>
   )
 }
-
-
 
 export default App
