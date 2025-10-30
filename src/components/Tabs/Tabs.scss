@@ -7,20 +7,10 @@
   }
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 44px;
-
-    // display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Використовуємо auto-fill */
-    // gap: 44px; /* Однаковий відступ між картками */
-    // padding: 20px;
-    // justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
   }
   &__item {
-    max-width: 440px;
-
-    // max-width: 400px; /* Фіксуємо максимальну ширину, щоб уникнути зміни розмірів */
-    // width: 100%; /* Дозволяє карткам адаптуватися */
     img {
       display: block;
       width: 100%;
@@ -44,7 +34,6 @@
     transition: all 0.3s;
     font-size: 24px;
     border-radius: 12px;
-    // border: 1px solid #aaaaaa;
     &.active {
       background: #FD6F00;
       color: #fff;
@@ -52,9 +41,20 @@
   }
 }
 
+// ------------------------------------------------ //
 
+/* large desktop (up to 1400px) */
+@media (max-width: 1400px) {}
 
-// .tab-button:hover {
-//   color: #0056b3;
-// }
+/* medium desktop (up to 1200px) */
+@media (max-width: 1200px) {}
+
+/* small laptop (up to 992px) */
+@media (max-width: 992px) {}
+
+/* tablet (up to 768px) */
+@media (max-width: 768px) {}
+
+/* mobile (up to 480px) */
+@media (max-width: 480px) {}
 

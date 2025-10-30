@@ -16,3 +16,34 @@
     box-shadow: 0 4px 20px rgba(30, 30, 30, 0.15);  
   }
 }
+
+// ------------------------------------------------ //
+
+/* large desktop (up to 1400px) */
+@media (max-width: 1400px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .header.scroll {
+    top: 0;
+  }
+}
+
+/* medium desktop (up to 1200px) */
+@media (max-width: 1200px) {
+
+}
+
+/* small laptop (up to 992px) */
+@media (max-width: 992px) {
+  .header__nav .nav {
+    display: none;
+  }
+}
+
+/* tablet (up to 768px) */
+@media (max-width: 768px) {}
+
+/* mobile (up to 480px) */
+@media (max-width: 480px) {}

@@ -6,3 +6,11 @@ button {
     display: block;
   }
 }
+
+/* medium desktop (up to 1200px) */
+@media (max-width: 992px) {
+  .theme-toggle {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}

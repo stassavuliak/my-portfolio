@@ -6,11 +6,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 90px;
   &__info {
     max-width: 720px;
+    width: 100%;
     p {
       margin-bottom: 22px;
     }
+  }
+  &__photo {
+    max-width: 500px;
+    width: 100%;
   }
   &__head {
     margin-bottom: 28px;
@@ -27,10 +33,32 @@
   &__img {
     max-width: 500px;
     width: 100%;
-    display: block;
   }
   &__btn {
     max-width: 188px;
     width: 100%;
   }
 }
+
+// ------------------------------------------------ //
+
+/* large desktop (up to 1400px) */
+@media (max-width: 1400px) {
+
+}
+
+/* medium desktop (up to 1200px) */
+@media (max-width: 1200px) {}
+
+/* small laptop (up to 992px) */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+/* tablet (up to 768px) */
+@media (max-width: 768px) {}
+
+/* mobile (up to 480px) */
+@media (max-width: 480px) {}

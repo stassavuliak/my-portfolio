@@ -6,7 +6,7 @@ const ThemeToggle = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <button onClick={toggleTheme}>
+    <button className='theme-toggle' onClick={toggleTheme}>
       {theme === 'dark' ? 
         <svg xmlns="http://www.w3.org/2000/svg" width = "30" height = "30" version="1.0" id="Layer_1" viewBox="0 0 64 64" enableBackground="new 0 0 64 64" xmlSpace="preserve">
           <g>
