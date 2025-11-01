@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect  } from "react";
 import './Tabs.scss';
 
 import tabsData from '../../data/tabs.json';
@@ -6,11 +6,19 @@ import itemsData from '../../data/tabsItems.json';
 
 const TabsWithFilter = () => {
   const [activeTab, setActiveTab] = useState("all");
+  const tabsHeaderRef = useRef(null); // добавили ref
 
   const filteredItems =
     activeTab === "all"
       ? itemsData
       : itemsData.filter(item => item.categories.includes(activeTab));
+
+      // сбрасываем скролл в начало при монтировании
+  useEffect(() => {
+    if (tabsHeaderRef.current) {
+      tabsHeaderRef.current.scrollLeft = 0;
+    }
+  }, []);
 
   return (
     <div className="tabs">

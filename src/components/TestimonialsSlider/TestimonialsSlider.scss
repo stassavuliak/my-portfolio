@@ -27,10 +27,19 @@
 @media (max-width: 1200px) {}
 
 /* small laptop (up to 992px) */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .swiper {
+    padding-bottom: 70px;
+  }
+}
 
 /* tablet (up to 768px) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
+}
 
 /* mobile (up to 480px) */
 @media (max-width: 480px) {}

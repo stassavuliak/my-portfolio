@@ -26,7 +26,20 @@
 @media (max-width: 1200px) {}
 
 /* small laptop (up to 992px) */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .footer__wrap {
+    padding-top: 60px;
+  }
+  .footer__inner-wrap {
+    gap: 35px;
+  }
+  .footer__copy {
+    padding: 20px 0;
+  }
+  .footer__copy p {
+    font-size: 12px;
+  }
+}
 
 /* tablet (up to 768px) */
 @media (max-width: 768px) {}

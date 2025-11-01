@@ -1,0 +1,142 @@
+@use "sass:list";
+
+$height: 34px;
+$thumb-height: 33px;
+$track-height: 12px;
+
+// Colors
+$upper-color: #edf5f9;
+$lower-color: #fd6f00;
+$thumb-color: #fd6f00;
+$thumb-hover-color: #eb6801;
+
+// Backgrounds
+$upper-background: linear-gradient(to bottom, #edf5f9, #edf5f9) 100% 50% / 100% $track-height no-repeat transparent;
+$lower-background: linear-gradient(to bottom, #fd6f00, #fd6f00) 100% 50% / 100% $track-height no-repeat transparent;
+
+// =======================
+// Wrapper
+// =======================
+.slider-wrapper {
+  margin: 8px 0 15px;
+  max-width: 700px;
+}
+
+// =======================
+// Range Input
+// =======================
+.slider {
+  overflow: hidden;
+  display: block;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+  height: $height;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  // Webkit (Chrome, Safari)
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: $height;
+    background: $lower-background;
+  }
+
+  &::-webkit-slider-thumb {
+    position: relative;
+    appearance: none;
+    height: $thumb-height;
+    width: $thumb-height;
+    background: $thumb-color;
+    border-radius: 50%;
+    border: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 150ms;
+
+    $shadow: ();
+    @for $i from 18 through 705 {
+      $shadow: list.append($shadow, #{$i}px 0 0 -10px #{$upper-color}, $separator: comma);
+    }
+    box-shadow: $shadow;
+  }
+
+  // Firefox
+  &::-moz-range-track,
+  &::-moz-range-progress {
+    width: 100%;
+    height: $height;
+    background: $upper-background;
+  }
+
+  &::-moz-range-progress {
+    background: $lower-background;
+  }
+
+  &::-moz-range-thumb {
+    appearance: none;
+    margin: 0;
+    height: $thumb-height;
+    width: $thumb-height;
+    background: $thumb-color;
+    border-radius: 50%;
+    border: 0;
+    transition: background-color 150ms;
+  }
+
+  // Edge / IE
+  &::-ms-track {
+    width: 100%;
+    height: $height;
+    border: 0;
+    color: transparent;
+    background: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background: $lower-background;
+  }
+
+  &::-ms-fill-upper {
+    background: $upper-background;
+  }
+
+  &::-ms-thumb {
+    appearance: none;
+    height: $thumb-height;
+    width: $thumb-height;
+    background: $thumb-color;
+    border-radius: 50%;
+    border: 0;
+    transition: background-color 150ms;
+    top: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  // Hover / Focus
+  &:hover,
+  &:focus {
+    &::-webkit-slider-thumb {
+      background-color: $thumb-hover-color;
+    }
+    &::-moz-range-thumb {
+      background-color: $thumb-hover-color;
+    }
+    &::-ms-thumb {
+      background-color: $thumb-hover-color;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-wrapper {
+    margin-top: 0;
+  }
+}
+
+
+

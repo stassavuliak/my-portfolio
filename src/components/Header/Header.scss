@@ -43,7 +43,19 @@
 }
 
 /* tablet (up to 768px) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  .nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
 
 /* mobile (up to 480px) */
 @media (max-width: 480px) {}

@@ -124,8 +124,8 @@ h1 {
 }
 
 h2 {
-  font-size: 65px;
-  font-size: clamp(2rem, 4vw + 1rem, 4rem);
+  // font-size: 65px;
+  font-size: clamp(2rem, 3vw + 1rem, 4rem);
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -173,11 +173,27 @@ h2 {
   h1 {
     max-width: 70%;
   }
+  .container {
+    max-width: 720px;
+  }
 }
 
 /* tablet (up to 768px) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  body {
+    padding-top: 76px;
+  }
+  .heading {
+    max-width: 450px;
+    width: 100%;
+  }
+ 
+}
 
 /* mobile (up to 480px) */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  //  .heading {
+  //   width: 100%;
+  // }
+}
 

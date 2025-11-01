@@ -15,10 +15,11 @@ const TestimonialsSlider = () => {
       slidesPerView={1}
       modules={[Pagination, Autoplay]}
       loop={true}
-      autoplay={{
-        delay: 3500,
-        disableOnInteraction: false
-      }}
+      autoHeight={true}
+      // autoplay={{
+      //   // delay: 3500,
+      //   disableOnInteraction: false
+      // }}
     >
 
       {testimonialsData.map((testimonial, index) => (

@@ -58,7 +58,15 @@
 }
 
 /* tablet (up to 768px) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .hero {
+    gap: 70px;
+  }
+  .hero__img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
 
 /* mobile (up to 480px) */
 @media (max-width: 480px) {}

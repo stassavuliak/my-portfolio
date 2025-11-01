@@ -21,3 +21,21 @@
     width: 100%;
   }
 }
+
+/* mobile (up to 768px) */
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    max-width: 380px;
+    gap: 15px;
+  }
+  .form button {
+    max-width: 100%;
+  }
+  .section-form .heading {
+    max-width: 415px;
+  }
+  .form input {
+    padding: 13px 20px;
+  }
+}
