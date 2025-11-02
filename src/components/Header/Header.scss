@@ -37,7 +37,13 @@
 
 /* small laptop (up to 992px) */
 @media (max-width: 992px) {
+  .header {
+    padding: 0;
+  }
   .header__nav .nav {
+    display: none;
+  }
+  .header__nav .btn {
     display: none;
   }
 }

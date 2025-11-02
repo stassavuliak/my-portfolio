@@ -8,11 +8,14 @@ import Services from './sections/Services/Services';
 import Projects from './sections/Projects/Projects';
 import Testimonials from './sections/Testimonials/Testimonials';
 import Form from './components/Form/Form';
+import PopupNavigation from './components/PopupNavigation/PopupNavigation';
 
 
 function App() {
   return (
     <ThemeProvider>
+
+      <PopupNavigation/>
 
       <Header/>
 

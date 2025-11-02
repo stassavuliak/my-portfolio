@@ -1,0 +1,94 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 80px;
+  left: 0;
+  &.active {
+    .popup__overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+    .popup__nav {
+      right: 0;
+    }
+  }
+  &__overlay {
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    transition: 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &__nav {
+    width: 350px;
+    height: 100vh;
+    background: var(--bg-color);
+    z-index: 1;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: .7s ease-in-out;
+  }
+  .nav {
+    ul {
+      flex-direction: column;
+    }
+  }
+}
+
+/* PopupNavigation.scss */
+// .popup {
+//   position: fixed;
+//   inset: 0;
+//   z-index: 40;
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: opacity 0.3s ease, visibility 0.3s ease;
+
+//   &.active {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+
+//   &__overlay {
+//     position: absolute;
+//     inset: 0;
+//     background: rgba(0, 0, 0, 0.4);
+//     backdrop-filter: blur(4px);
+//   }
+
+//   &__nav {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 70%;
+//     max-width: 320px;
+//     height: 100%;
+//     background: #fff;
+//     box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+//     transform: translateX(100%);
+//     transition: transform 0.35s ease;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 2.5rem;
+
+//     .nav ul {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 1.2rem;
+//     }
+
+//     .btn {
+//       margin-top: 2rem;
+//       align-self: flex-start;
+//     }
+//   }
+
+//   &.active .popup__nav {
+//     transform: translateX(0);
+//   }
+// }

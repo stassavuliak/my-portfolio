@@ -1,0 +1,44 @@
+.hamburger {
+  padding: 0;
+  display: none;
+}
+.ham {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.active .hamRotate {
+  transform: rotate(45deg);
+}
+.active .hamRotate180 {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: var(--text-color);
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.active .ham1 .top {
+  stroke-dashoffset: -98px;
+}
+.active .ham1 .bottom {
+  stroke-dashoffset: -138px;
+}
+
+/* mobile (up to 992px) */
+@media (max-width: 992px) {
+  .hamburger {
+    display: block;
+  }
+}
