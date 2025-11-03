@@ -3,11 +3,9 @@ import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import Hamburger from '../Hamburger/Hamburger';
-import PopupNavigation from '../PopupNavigation/PopupNavigation';
 
-const Header = () => {
+const Header = ({ menuOpen, toggleMenu }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
@@ -15,7 +13,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleMenu = () => setMenuOpen(prev => !prev);
 
   return (
     <header className={`header ${isScrolled ? "scroll" : ""}`}>
@@ -41,7 +38,7 @@ const Header = () => {
         </div>
       </div>
 
-      <PopupNavigation isActive={menuOpen} toggleMenu={toggleMenu} />
+      
     </header>
   )
 }

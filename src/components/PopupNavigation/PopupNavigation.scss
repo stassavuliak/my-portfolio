@@ -4,7 +4,9 @@
   height: 100vh;
   top: 80px;
   left: 0;
+  pointer-events: none;
   &.active {
+    pointer-events: unset;
     .popup__overlay {
       opacity: 1;
       visibility: visible;
@@ -17,25 +19,33 @@
     background: rgba(0,0,0,0.2);
     width: 100%;
     height: 100vh;
-    backdrop-filter: blur(5px);
-    transition: 1s ease-in-out;
+    backdrop-filter: blur(3px);
+    transition: 0.5s ease-in-out;
     opacity: 0;
     visibility: hidden;
   }
+  &__wrap {
+    max-height: 70vh; /* Максимальная высота внутри popup */
+    overflow-y: auto;  /* Скролл при переполнении */
+    padding-right: 10px;
+  }
   &__nav {
-    width: 350px;
+    width: 300px;
     height: 100vh;
     background: var(--bg-color);
     z-index: 1;
     padding: 30px;
     position: absolute;
     top: 0;
-    right: -100%;
-    transition: .7s ease-in-out;
+    right: -120%;
+    transition: right 0.5s ease-in-out;
+    text-align: center;
   }
   .nav {
+    margin-bottom: 30px;
     ul {
       flex-direction: column;
+      gap: 15px;
     }
   }
 }

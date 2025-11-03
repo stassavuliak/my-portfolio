@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ThemeProvider } from './contexts/ThemeProvider';
 import { Element } from "react-scroll";
 import Header from './components/Header/Header';
@@ -12,12 +13,16 @@ import PopupNavigation from './components/PopupNavigation/PopupNavigation';
 
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(prev => !prev);
+
   return (
     <ThemeProvider>
 
-      <PopupNavigation/>
+      <PopupNavigation isActive={menuOpen} toggleMenu={toggleMenu} />
 
-      <Header/>
+      <Header menuOpen={menuOpen} toggleMenu={toggleMenu} />
 
       <Element name="home">
         <Hero/>
