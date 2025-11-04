@@ -3,6 +3,7 @@ import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import Hamburger from '../Hamburger/Hamburger';
+import PropTypes from 'prop-types';
 
 const Header = ({ menuOpen, toggleMenu }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,10 +38,13 @@ const Header = ({ menuOpen, toggleMenu }) => {
           <Hamburger isActive={menuOpen} toggleClass={toggleMenu} />
         </div>
       </div>
-
-      
     </header>
   )
 }
+
+Header.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
+};
 
 export default Header;

@@ -5,6 +5,7 @@
   top: 80px;
   left: 0;
   pointer-events: none;
+  z-index: 2;
   &.active {
     pointer-events: unset;
     .popup__overlay {

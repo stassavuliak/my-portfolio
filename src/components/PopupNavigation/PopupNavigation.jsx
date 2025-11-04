@@ -2,6 +2,7 @@
 import './PopupNavigation.scss';
 import { Link } from "react-scroll";
 import SocialLinks from '../SocialLinks/SocialLinks';
+import PropTypes from 'prop-types';
 
 const PopupNavigation = ({ isActive, toggleMenu }) => {
   return (
@@ -28,5 +29,10 @@ const PopupNavigation = ({ isActive, toggleMenu }) => {
     </div>
   )
 }
+
+PopupNavigation.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
+};
 
 export default PopupNavigation;

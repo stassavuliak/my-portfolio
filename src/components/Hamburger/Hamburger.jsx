@@ -1,4 +1,4 @@
-// Hamburger.jsx
+import PropTypes from 'prop-types';
 import './Hamburger.scss';
 
 const Hamburger = ({ isActive, toggleClass }) => {
@@ -11,6 +11,11 @@ const Hamburger = ({ isActive, toggleClass }) => {
       </svg>
     </button>
   );
+};
+
+Hamburger.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+  toggleClass: PropTypes.func.isRequired,
 };
 
 export default Hamburger;
