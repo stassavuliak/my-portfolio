@@ -1,35 +1,35 @@
 [
   {
     "id": 1,
-    "image": "/images/img/proj1.png",
+    "image": "images/img/proj1.png",
     "title": "AirCalling Landing Page Design",
     "categoryName": "UI/UX & Web Design",
     "categories": ["uiUx", "webDesign"]
   },
   {
     "id": 2,
-    "image": "/images/img/proj2.png",
+    "image": "images/img/proj2.png",
     "title": "Business Landing Page Design",
     "categoryName": "App Design",
     "categories": ["appDesign"]
   },
   {
     "id": 3,
-    "image": "/images/img/proj3.png",
+    "image": "images/img/proj3.png",
     "title": "Ecom Web Page Design",
     "categoryName": "Graphic Design & App Design",
     "categories": ["graphicDesign", "appDesign"]
   },
   {
     "id": 4,
-    "image": "/images/img/proj1.png",
+    "image": "images/img/proj1.png",
     "title": "Business Landing Page Design",
     "categoryName": "App Design",
     "categories": ["appDesign"]
   },
   {
     "id": 5,
-    "image": "/images/img/proj2.png",
+    "image": "images/img/proj2.png",
     "title": "AirCalling Landing Page Design",
     "categoryName": "UI/UX",
     "categories": ["uiUx"]
