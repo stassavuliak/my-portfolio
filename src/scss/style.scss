@@ -1,40 +1,60 @@
-@use 'normalize.css';
-@use 'fonts.scss';
-
+@use "normalize.css";
+@use "fonts.scss";
 
 // ---------------------------------------------------------------------- //
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: block;
 }
 
-a, a:hover, a:active {
+a,
+a:hover,
+a:active {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
-input, input:focus, button {
+input,
+input:focus,
+button {
   outline: none;
   background: transparent;
 }
 
-div, p, form, input, a, span, button, textarea {
-	box-sizing: border-box;
+div,
+p,
+form,
+input,
+a,
+span,
+button,
+textarea {
+  box-sizing: border-box;
 }
 
 p {
   margin: 0;
 }
 
-a, a:hover, button, button:hover {
+a,
+a:hover,
+button,
+button:hover {
   transition: all 0.3s ease;
   outline: none;
 }
@@ -61,19 +81,21 @@ img {
 :root {
   --bg-color: #fff;
   --text-color: #000;
-  --bg-card: #F8F8F8;
+  --bg-card: #f8f8f8;
+  --box-shadow: 0 4px 20px rgba(30, 30, 30, 0.15);
 }
 
 .dark {
-  --bg-color: #1E1E1E;
+  --bg-color: #1e1e1e;
   --text-color: #fff;
   --bg-card: #3a3a3a;
+  --box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 1vw + 0.5rem, 1.3rem);
   letter-spacing: 0.05em;
@@ -102,13 +124,13 @@ p {
   }
 }
 .btn {
-  background: #FD6F00;
+  background: #fd6f00;
   border-radius: 12px;
   padding: 14px 18px;
   color: #fff;
   letter-spacing: 0.05em;
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
     color: #fff;
   }
 }
@@ -133,7 +155,7 @@ h2 {
 .logo {
   font-weight: 700;
   font-size: 32px;
-  color: #FD6F00;
+  color: #fd6f00;
 }
 
 .heading {
@@ -141,7 +163,7 @@ h2 {
   // max-width: 930px;
   width: 80%;
   margin: 0 auto;
-}  
+}
 
 // ------------------------------------------------ //
 
@@ -187,7 +209,6 @@ h2 {
     max-width: 450px;
     width: 100%;
   }
- 
 }
 
 /* mobile (up to 480px) */
@@ -196,4 +217,3 @@ h2 {
   //   width: 100%;
   // }
 }
-

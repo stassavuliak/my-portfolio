@@ -3,17 +3,25 @@
   position: fixed;
   width: 100%;
   top: 0;
-  transition: top 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    top 0.3s ease,
+    padding 0.3s ease,
+    box-shadow 0.3s ease;
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    a {
+      &:hover {
+        color: #fd6f00;
+      }
+    }
   }
   &.scroll {
     z-index: 2;
     background: var(--bg-color);
     top: -40px;
-    box-shadow: 0 4px 20px rgba(30, 30, 30, 0.15);  
+    box-shadow: var(--box-shadow);
   }
 }
 
@@ -32,7 +40,6 @@
 
 /* medium desktop (up to 1200px) */
 @media (max-width: 1200px) {
-
 }
 
 /* small laptop (up to 992px) */
@@ -61,4 +68,5 @@
 }
 
 /* mobile (up to 480px) */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+}
